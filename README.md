@@ -1,8 +1,10 @@
-# lms模板仓库
+# create-refactor-app
+## 前提
+本应用是用来原生页面esm化，比如有一个参考的原生页面，需要在其基础上进行重构开发。或者老的前端项目，使用此架子可快速esm化，以及嵌入了部分ci的功能。
 
 ## 开发指南
-- 将网页下载下来, 确认页面样式,对冗余脚本进行清理.
-- 页面文件夹移动至`src/template`目录下.
+- 将网页下载下来, 确认页面样式,对冗余脚本（广告，监控等）进行清理.
+- 页面文件夹移动至`src/page`目录下.
 - 使用`/build/generate/global2esm.js`脚本进行模块化转化.
 - 使用`npm run test`来测试有无编译问题.
 
@@ -19,7 +21,7 @@ dist
 
 ```sh
 dist
-├── brand_v6 copy  //模板名称
+├── pageName  //页面名称
 │   ├── assets	//静态资源目录
 │   │   ├── 1-star.png
 │   │   ├── 3f8ad96bb34fdede-152.css
