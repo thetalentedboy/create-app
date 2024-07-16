@@ -11,6 +11,6 @@ node_modules/
 *.local
 *.DS_Store
 
-*.json
+build/*.json
 # runtime files
 dist
